@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My Portfolio</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="mediaqueries.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="fixed">
+				<div class="bottom-left">
+					<div>
+						<ul class="list">
+							<li>
+								<a href="https://github.com/badri7489" target="_blank">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										role="img"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										height="20"
+									>
+										<title>GitHub</title>
+										<path
+											d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+										></path>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/badri7489/" target="_blank">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										role="img"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										width="20"
+										height="20"
+									>
+										<title>Instagram</title>
+										<rect
+											x="2"
+											y="2"
+											width="20"
+											height="20"
+											rx="5"
+											ry="5"
+										></rect>
+										<path
+											d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+										></path>
+										<line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a
+									href="https://www.linkedin.com/in/biswanath-prasad-sharma-4a399b196/"
+									target="_blank"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										role="img"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										width="20"
+										height="20"
+									>
+										<title>LinkedIn</title>
+										<path
+											d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+										></path>
+										<rect x="2" y="9" width="4" height="12"></rect>
+										<circle cx="4" cy="4" r="2"></circle>
+									</svg>
+								</a>
+							</li>
+							<div class="vertical-line"></div>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="scroll-middle">
+				<header>
+					<nav class="desktop-nav">
+						<div class="logo">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 100 100"
+								width="200"
+								height="200"
+							>
+								<text
+									x="10"
+									y="50"
+									font-family="Dancing Script"
+									font-size="48"
+									fill="black"
+								>
+									B
+								</text>
+							</svg>
+						</div>
+						<div>
+							<ul class="nav-links">
+								<li><a href="#about">About</a></li>
+								<li><a href="#experience">Experience</a></li>
+								<li><a href="#projects">Projects</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</div>
+					</nav>
+				</header>
+				<nav class="hamburger-nav">
+					<div class="logo">Biswanath Prasad Sharma</div>
+					<div class="hamburger-menu">
+						<div class="hamburger-icon" onclick="toggleMenu()">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<div class="menu-links">
+							<li><a href="#about" onclick="toggleMenu()">About</a></li>
+							<li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+							<li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+							<li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+						</div>
+					</div>
+				</nav>
+				<section id="profile">
+					<div class="section__text">
+						<p class="section__text__p1">Hi, my name is</p>
+						<h1 class="title">Biswanath Sharma</h1>
+						<p class="section__text__p2">Software Engineer</p>
+						<div class="btn-container">
+							<button
+								class="btn btn-color-2"
+								onclick="window.open('./assets/cv.pdf')"
+							>
+								Download CV
+							</button>
+						</div>
+					</div>
+				</section>
+				<section id="about">
+					<p class="section__text__p1">Get To Know More</p>
+					<h1 class="title">About Me</h1>
+					<div class="section-container">
+						<div class="about-details-container">
+							<div class="about-container">
+								<div class="details-container">
+									<img
+										src="./assets/experience.png"
+										alt="Experience Icon"
+										class="icon"
+									/>
+									<h3>Experience</h3>
+									<p>1+ years <br />Software Engineering</p>
+								</div>
+								<div class="details-container">
+									<img
+										src="./assets/experience.png"
+										alt="Experience Icon"
+										class="icon"
+									/>
+									<h3>Education</h3>
+									<p>B.Tech <br />Computer Science and Engineering</p>
+								</div>
+							</div>
+							<div class="text-container">
+								<p>
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Laboriosam officia alias soluta consequuntur, ipsum odio harum
+									commodi sed modi nostrum tenetur quae dolores architecto minus
+									quibusdam earum temporibus error aliquam.
+								</p>
+							</div>
+						</div>
+					</div>
+					<img
+						src="./assets/arrow.png"
+						alt="Arrow Icon"
+						class="icon arrow"
+						onclick="location.href='./#experience'"
+					/>
+				</section>
+				<section id="experience">
+					<p class="section__text__p1">Explore My</p>
+					<h1 class="title">Experience</h1>
+					<div class="experience-details-container">
+						<div class="about-container">
+							<div class="details-container">
+								<h2 class="experience-sub-title">Frontend Development</h2>
+								<div class="articler-container">
+									<article>
+										<img
+											src="./assets/checkmark.png"
+											alt="Experience icon"
+											class="icon"
+										/>
+										<div>
+											<h3>Javascript</h3>
+											<p>Experienced</p>
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="fixed">
+				<div class="bottom-right">
+					<div>
+						<ul class="list">
+							<a
+								href="mailto:biswanathsharma1998@gmail.com"
+								class="mail-to"
+								target="_blank"
+								>biswanathsharma1998@gmail.com</a
+							>
+							<div class="vertical-line"></div>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
